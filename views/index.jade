@@ -7,6 +7,7 @@ block content
                 img(src="/document/404.png", alt="My Avatar")
             div.hero-unit.span5
                 h2 #{show_name}
+                wb:follow-button(uid="2100989064", type="red_4", width="100%")
             div.page-header
             p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris arcu, ultricies in vestibulum in, iaculis nec enim. Quisque sapien odio, venenatis mollis mollis id, pulvinar congue sapien.
             
@@ -50,12 +51,11 @@ block content
                         img(src="/document/404.png")
                     div
                         img(src="/document/me.jpg")
-        div.span2
-            h2 Contact
-            p
-                i.icon-evelop #{contact_mail}
          div.span2
             h2 Share
-            p
-                i.icon-evelop #{contact_mail}
+            wb:share-button(count="n", type="button", size="middle", relateuid="2100989064")
+         div.span2
+            h2 Weibo
+            a(href="http://weibo.com/u/2100989064?s=6uyXnP", target="_blank")
+                img(border="0", src="http://service.t.sina.com.cn/widget/qmd/2100989064/c48222d8/1.png")
         
