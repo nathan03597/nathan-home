@@ -6,6 +6,8 @@
 var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
+  , document = require('./routes/document')
+  , fileupload = require('./routes/fileupload')
   , http = require('http')
   , path = require('path');
 
@@ -29,6 +31,9 @@ app.configure('development', function(){
 
 app.get('/', routes.index);
 app.get('/users', user.list);
+app.get('/document/:filename', document.document);
+app.post('/fileupload/file', fileupload.fileupload);
+app.get('/upload', fileupload.formpage);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));

@@ -1,5 +1,61 @@
 extends layout
-
+    
 block content
-  h1= title
-  p Welcome to #{title}
+    div.container
+        div.span9
+            div.thumbnail.span2
+                img(src="/document/404.png", alt="My Avatar")
+            div.hero-unit.span5
+                h2 #{show_name}
+            div.page-header
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris arcu, ultricies in vestibulum in, iaculis nec enim. Quisque sapien odio, venenatis mollis mollis id, pulvinar congue sapien.
+            
+            div.page-header.noPrint
+                h2 Photo
+            div.blue
+                div.live-tile(data-stops="100%", data-speed="750", data-delay="3000")
+                    span.tile-title Blogs
+                    div
+                        img(src="/document/404.png")
+                    div
+                        img(src="/document/me.jpg")
+            div.red
+                div.mango.list-tile
+                    span.tile-title Photos
+                    ul.flip-list.fourTiles(data-mode="flip-list", data-delay="3000")
+                        li
+                            div
+                                img(src="/document/view1.jpg")
+                            div
+                                img(src="/document/view2.jpg")
+                        li
+                            div
+                                img(src="/document/view3.jpg")
+                            div
+                                img(src="/document/view4.jpg")
+                        li
+                            div
+                                img(src="/document/view4.jpg")
+                            div
+                                img(src="/document/view2.jpg")
+                        li
+                            div
+                                img(src="/document/view3.jpg")
+                            div
+                                img(src="/document/view1.jpg")
+            div.red
+                div.live-tile(data-stops="50%", data-speed="750", data-delay="5000")
+                    span.tile-title Blogs
+                    div
+                        img(src="/document/404.png")
+                    div
+                        img(src="/document/me.jpg")
+        div.span2
+            h2 Contact
+            p
+                i.icon-evelop #{contact_mail}
+         div.span2
+            h2 Share
+            p
+                i.icon-evelop #{contact_mail}
+        
