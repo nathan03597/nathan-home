@@ -1,11 +1,12 @@
 !!! 5
-html
+html(xmlns:wb="http://open.weibo.com/wb")
   head
     meta(http-equiv="Content-Type", content="text/html; charset=UTF-8")
     meta(name="description", content="Nathan Ma's personal website")
     link(rel='stylesheet', type='text/css', href='/stylesheets/bootstrap.css')
     link(rel='stylesheet', type='text/css', href='/stylesheets/metrojs.css')
     link(rel='stylesheet', type='text/css', href='/stylesheets/custom.css')
+    script(src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js")
     style(type='text/css')
         body {padding-top: 60px;}
   body
@@ -20,11 +21,11 @@ html
                 div.nav-collapse.collapse
                     ul.nav
                         li.active
-                            a(href="#") Home
+                            a(href="/") Home
                         li.active
                             a(href="#") About
                         li.active
-                            a(href="#") Contact
+                            a(href="fileupload") File Upload
     block content
     footer.footer-bar CopyRight ...
     script(src='/scripts/jquery-1.8.0.min.js')
