@@ -1,0 +1,24 @@
+.page-header {
+    clear: both;
+}
+
+.hero-unit{
+    background: #FFF;padding: 0
+}
+
+.footer-bar{
+    background-color: #212021;
+    bottom: 0px;
+    color: white;
+    font-size: .9em;
+    height: 20px;
+    left: 0px;
+    line-height: normal;
+    margin: 0;
+    overflow: hidden;
+    padding: 10px 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+}
