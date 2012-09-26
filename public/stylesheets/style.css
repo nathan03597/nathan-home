@@ -1,8 +1,3 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00B7FF;
-}
+.hero-unit{background: #FFF;padding: 0}
+.page-header{clear: both; }
+.carousel-inner img{height: 300px; width: 100%}
