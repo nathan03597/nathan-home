@@ -58,4 +58,9 @@ block content
             h2 Weibo
             a(href="http://weibo.com/u/2100989064?s=6uyXnP", target="_blank")
                 img(border="0", src="http://service.t.sina.com.cn/widget/qmd/2100989064/c48222d8/1.png")
+block js
+    script
+        $(document).ready(function(){
+            $(".live-tile, .flip-list").not(".exclude").liveTile();
+        });
         
